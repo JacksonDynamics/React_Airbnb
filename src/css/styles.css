@@ -28,11 +28,8 @@ nav {
     max-width: 100px;
 }
 
-section {
-    padding: 36px;
-}
-
 .hero {
+    padding: 30px;
     display: flex;
     flex-direction: column;
 }
