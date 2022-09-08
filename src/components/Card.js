@@ -2,12 +2,15 @@ function Card() {
     return( 
         <div className="card">
             <img src="images/katie-zaferes.png"
-                 className="katie" 
+                 className="card--image" 
                  alt="Katie Zaferes" />
             <p className="rating">
                 <img src="images/star.png" 
                  className="star"
-                 alt="Red rating star" /> 5.0 USA
+                 alt="Red rating star" /> 
+                 <span>5.0</span>
+                 <span className="grey">(6) • </span>
+                 <span className="grey">USA</span> 
             </p>
             <p className="card--title">
                 Life lessons with Katie Zaeferes
