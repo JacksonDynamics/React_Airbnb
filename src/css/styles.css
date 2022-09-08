@@ -2,14 +2,24 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
-    max-width: 550px;
+html {
+    font-size: 62.5%;
 }
 
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.App {
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+}
 nav {
     height: 70px;
-    box-shadow: 0px 3px 7.5px rgba(0,0,0,0.1)
+    box-shadow: 0px 3px 7.5px rgba(0,0,0,0.1);
+    border-radius: 10px 10px 0 0;
 }
 
 .navbar-logo {
@@ -18,8 +28,27 @@ nav {
     max-width: 100px;
 }
 
-.navbar-grid {
+section {
+    padding: 20px;
+}
+
+.hero {
     display: flex;
-    margin: 26px auto 32px;
-    width: 395px;
+    flex-direction: column;
+}
+
+.hero--grid {
+    max-width: 80%;
+    align-self: center;
+}
+
+.hero--header {
+    margin: 36px 36px 16px;
+    font-size: 3.6rem;
+}
+
+.hero--description {
+    margin: 0 36px 49px;
+    font-size: 1.6rem;
+    max-width: 70%;
 }
