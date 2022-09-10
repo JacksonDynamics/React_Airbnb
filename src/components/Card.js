@@ -1,21 +1,21 @@
-function Card() {
+function Card({img, rating, reviewCount, country, title, price}) {
     return( 
         <div className="card">
-            <img src="images/katie-zaferes.png"
+            <img src={img}
                  className="card--image" 
                  alt="Katie Zaferes" />
             <p className="rating">
-                <img src="images/star.png" 
+                <img src={"images/star.png"} 
                  className="star"
                  alt="Red rating star" /> 
-                 <span>5.0</span>
-                 <span className="grey">(6) • </span>
-                 <span className="grey">USA</span> 
+                 <span>{rating}</span>
+                 <span className="grey">{reviewCount} • </span>
+                 <span className="grey">{country}</span> 
             </p>
             <p className="card--title">
-                Life lessons with Katie Zaeferes
+                {title}
             </p>
-            <p className="card--cost"><strong>From $136</strong>/person</p>
+            <p className="card--cost"><strong>From ${price}</strong>/person</p>
         </div>
     )
 }
