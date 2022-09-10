@@ -10,12 +10,12 @@ function App() {
         <Navbar />
         <Hero />
         <Card 
-          img="./images/katie-zaferes.png"
+          img="katie-zaferes.png"
           rating="5.0" 
           reviewCount="(6)"
           country="USA"
           title="Life lessons with Katie Zaeferes"
-          price="136" />
+          price={136} />
     </div>
   );
 }
