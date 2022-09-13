@@ -51,8 +51,18 @@ nav {
     max-width: 70%;
 }
 
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    margin-left: 66px;
+}
+
 .card {
-    margin: 0 66px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
     font-size: 1.2rem;
     width: 175px;
 }
@@ -60,23 +70,29 @@ nav {
 .card--image {
     width: 100%;
     border-radius: 9px;
+    margin-bottom: 9px;;
 }
 
 .rating {
     display: flex;
     align-items: center;
+    
 }
 
 .star {
     width: 14px;
+    margin-right: 5px;
 }
 
 .card--title {
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 0;
+    
+    
 }
 
 .grey {
     color: #918E9B;
+    margin: 0 1px;
 }

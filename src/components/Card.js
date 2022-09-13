@@ -9,7 +9,7 @@ function Card(props) {
                  className="star"
                  alt="Red rating star" /> 
                  <span>{props.rating}</span>
-                 <span className="grey">{props.reviewCount} • </span>
+                 <span className="grey">({props.reviewCount}) • </span>
                  <span className="grey">{props.location}</span> 
             </p>
             <p className="card--title">
