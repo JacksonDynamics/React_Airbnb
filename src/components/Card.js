@@ -1,21 +1,21 @@
-function Card({img, rating, reviewCount, country, title, price}) {
+function Card(props) {
     return( 
         <div className="card">
-            <img src={`./images/${img}`}
+            <img src={`./images/${props.img}`}
                  className="card--image" 
-                 alt="Katie Zaferes" />
+                 alt="" />
             <p className="rating">
                 <img src={"images/star.png"} 
                  className="star"
                  alt="Red rating star" /> 
-                 <span>{rating}</span>
-                 <span className="grey">{reviewCount} • </span>
-                 <span className="grey">{country}</span> 
+                 <span>{props.rating}</span>
+                 <span className="grey">{props.reviewCount} • </span>
+                 <span className="grey">{props.location}</span> 
             </p>
             <p className="card--title">
-                {title}
+                {props.title}
             </p>
-            <p className="card--cost"><strong>From ${price}</strong>/person</p>
+            <p className="card--cost"><strong>From ${props.price}</strong>/person</p>
         </div>
     )
 }
