@@ -7,9 +7,10 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    
+    max-width: 700px;
+    box-shadow: 0px 3px 7.5px rgba(0,0,0,0.2);
 }
 
 .App {
@@ -88,9 +89,7 @@ nav {
 .card--title {
     font-size: 1.4rem;
     font-weight: 300;
-    margin-bottom: 0;
-    
-    
+    margin-bottom: 0;   
 }
 
 .grey {
